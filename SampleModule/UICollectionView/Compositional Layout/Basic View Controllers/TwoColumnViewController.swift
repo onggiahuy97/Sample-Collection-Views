@@ -1,14 +1,13 @@
 //
-//  GridViewController.swift
+//  TwoColumnViewController.swift
 //  SampleModule
 //
 //  Created by Huy Ong on 8/22/20.
 //
 
 import UIKit
-import SafariServices
 
-class GridViewController: UIViewController {
+class TwoColumnViewController: UIViewController {
     
     enum Section {
         case main
@@ -19,34 +18,29 @@ class GridViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Grid"
+        navigationItem.title = "Two-Column Grid"
         configureHierarchy()
         configureDataSource()
-        configureLink()
     }
 }
 
-extension GridViewController {
-    func configureLink() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Code", style: .plain, target: self, action: #selector(handleCode))
-    }
-    
-    @objc private func handleCode() {
-        guard let url = URL(string: Self.urlString) else { return }
-        let safari = SFSafariViewController(url: url)
-        present(safari, animated: true, completion: nil)
-    }
-    
-    private func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2), heightDimension: .fractionalHeight(1.0))
+extension TwoColumnViewController {
+    func createLayout() -> UICollectionViewLayout {
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.2))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .absolute(88))
         
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
+        let spacing = CGFloat(12)
+        group.interItemSpacing = .fixed(spacing)
         
         let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = spacing
+        section.contentInsets = .init(top: 0, leading: 8, bottom: 0, trailing: 8)
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
@@ -59,10 +53,10 @@ extension GridViewController {
         view.addSubview(collectionView)
     }
     
-    private func configureDataSource() {
+    func configureDataSource() {
         let cellRegistration = UICollectionView.CellRegistration<TextCell, Int> { (cell, indexPath, identifier) in
             cell.label.text = "\(identifier)"
-            cell.contentView.backgroundColor = .systemBlue
+            cell.contentView.backgroundColor = .systemPink
             cell.layer.borderColor = UIColor.black.cgColor
             cell.layer.borderWidth = 1
             cell.label.textAlignment = .center
@@ -78,8 +72,4 @@ extension GridViewController {
         snapshot.appendItems(Array(0...104))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
-}
-
-extension GridViewController {
-    static let urlString = "https://github.com/onggiahuy97/Sample-Collection-Views/blob/master/SampleModule/UICollectionView/Compositional%20Layout/Basic%20View%20Controllers/GridViewController.swift"
 }

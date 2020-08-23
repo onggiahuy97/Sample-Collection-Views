@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        TabView {
             CombineCollectionViewContainer()
                 .edgesIgnoringSafeArea(.all)
-                .navigationTitle("Sample Collection Views")
-                .navigationBarTitleDisplayMode(.inline)
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
         }
     }
 }

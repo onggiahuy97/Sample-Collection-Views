@@ -12,9 +12,12 @@
 		3E767C9224F09C1000475179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E767C9124F09C1000475179 /* Assets.xcassets */; };
 		3E767C9524F09C1000475179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E767C9424F09C1000475179 /* Preview Assets.xcassets */; };
 		3E767C9E24F09C4000475179 /* CombineCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767C9D24F09C4000475179 /* CombineCollectionView.swift */; };
-		3E767CA124F1974F00475179 /* OutlineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CA024F1974F00475179 /* OutlineItem.swift */; };
 		3E767CA524F1A40600475179 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CA424F1A40600475179 /* GridViewController.swift */; };
 		3E767CA824F1DE0D00475179 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CA724F1DE0D00475179 /* TextCell.swift */; };
+		3E767CAA24F1E82100475179 /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CA924F1E82100475179 /* InsetItemsGridViewController.swift */; };
+		3E767CAC24F2182100475179 /* TwoColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CAB24F2182100475179 /* TwoColumnViewController.swift */; };
+		3E767CAE24F2CD0C00475179 /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */; };
+		3E767CB024F2D23800475179 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CAF24F2D23800475179 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,12 @@
 		3E767C9424F09C1000475179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E767C9624F09C1000475179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E767C9D24F09C4000475179 /* CombineCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCollectionView.swift; sourceTree = "<group>"; };
-		3E767CA024F1974F00475179 /* OutlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineItem.swift; sourceTree = "<group>"; };
 		3E767CA424F1A40600475179 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		3E767CA724F1DE0D00475179 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		3E767CA924F1E82100475179 /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
+		3E767CAB24F2182100475179 /* TwoColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnViewController.swift; sourceTree = "<group>"; };
+		3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
+		3E767CAF24F2D23800475179 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,18 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				3E767CA224F1A3DE00475179 /* Compositional Layout */,
-				3E767C9F24F1974500475179 /* Model */,
 				3E767C9D24F09C4000475179 /* CombineCollectionView.swift */,
 			);
 			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		3E767C9F24F1974500475179 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3E767CA024F1974F00475179 /* OutlineItem.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3E767CA224F1A3DE00475179 /* Compositional Layout */ = {
@@ -109,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				3E767CA424F1A40600475179 /* GridViewController.swift */,
+				3E767CA924F1E82100475179 /* InsetItemsGridViewController.swift */,
+				3E767CAB24F2182100475179 /* TwoColumnViewController.swift */,
+				3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */,
 			);
 			path = "Basic View Controllers";
 			sourceTree = "<group>";
@@ -117,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3E767CA724F1DE0D00475179 /* TextCell.swift */,
+				3E767CAF24F2D23800475179 /* ListCell.swift */,
 			);
 			path = "Cell and Supplementary Views";
 			sourceTree = "<group>";
@@ -190,12 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E767CAE24F2CD0C00475179 /* DistinctSectionsViewController.swift in Sources */,
 				3E767C9024F09C0F00475179 /* ContentView.swift in Sources */,
 				3E767CA524F1A40600475179 /* GridViewController.swift in Sources */,
 				3E767C8E24F09C0F00475179 /* SampleModuleApp.swift in Sources */,
 				3E767C9E24F09C4000475179 /* CombineCollectionView.swift in Sources */,
 				3E767CA824F1DE0D00475179 /* TextCell.swift in Sources */,
-				3E767CA124F1974F00475179 /* OutlineItem.swift in Sources */,
+				3E767CB024F2D23800475179 /* ListCell.swift in Sources */,
+				3E767CAA24F1E82100475179 /* InsetItemsGridViewController.swift in Sources */,
+				3E767CAC24F2182100475179 /* TwoColumnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
