@@ -32,6 +32,7 @@ extension ListCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontForContentSizeCategory = true
         label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.textColor = .black
         contentView.addSubview(label)
         
         accessoryImageView.translatesAutoresizingMaskIntoConstraints = false

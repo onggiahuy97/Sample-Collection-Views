@@ -11,7 +11,7 @@ import SafariServices
 class DistinctSectionsViewController: UIViewController {
     
     enum SectionLayoutKind: Int, CaseIterable {
-        case list, grid6, grid3
+        case grid3, list, grid6 
         var columnCount: Int {
             switch self {
             case .grid3: return 3
@@ -68,7 +68,7 @@ extension DistinctSectionsViewController {
     func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
         collectionView.delegate = self
     }

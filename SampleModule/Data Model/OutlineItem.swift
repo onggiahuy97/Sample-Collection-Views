@@ -44,10 +44,11 @@ extension OutlineItem {
                     OutlineItem(title: "Inset Items Grid", viewController: InsetItemsGridViewController.self, url: ""),
                     OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
                     OutlineItem(title: "Per-Section Layout", subitems: [
-                        OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self)
+                        OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self),
+                        OutlineItem(title: "Adaptive Sections", viewController: AdaptiveSectionsViewController.self)
                     ])
                 ])
-            ])
+            ]),
             
             // MARK: - Diffable Data Source
             
@@ -56,6 +57,11 @@ extension OutlineItem {
             // MARK: - Outlines
             
             // MARK: - SwiftUI
+            OutlineItem(title: "SwiftUI", subitems: [
+                OutlineItem(title: "Text", viewController: TextSwiftUIViewController.self),
+                OutlineItem(title: "ProgressViews - Indicators", viewController: ProgressViewViewController.self),
+                OutlineItem
+            ])
         ]
     }()
 }

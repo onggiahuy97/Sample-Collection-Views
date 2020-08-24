@@ -19,6 +19,10 @@
 		3E767CAE24F2CD0C00475179 /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */; };
 		3E767CB024F2D23800475179 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CAF24F2D23800475179 /* ListCell.swift */; };
 		3E767CB924F350A300475179 /* OutlineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CB824F350A300475179 /* OutlineItem.swift */; };
+		3E767CBC24F41AF100475179 /* AdaptiveSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CBB24F41AF100475179 /* AdaptiveSectionsViewController.swift */; };
+		3E767CC624F433F900475179 /* TextSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */; };
+		3E767CC924F43C2000475179 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CC824F43C2000475179 /* SectionView.swift */; };
+		3E767CCB24F4427A00475179 /* ProgressViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,11 @@
 		3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 		3E767CAF24F2D23800475179 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		3E767CB824F350A300475179 /* OutlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineItem.swift; sourceTree = "<group>"; };
+		3E767CBA24F35ABC00475179 /* SampleModule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleModule.entitlements; sourceTree = "<group>"; };
+		3E767CBB24F41AF100475179 /* AdaptiveSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionsViewController.swift; sourceTree = "<group>"; };
+		3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSwiftUIViewController.swift; sourceTree = "<group>"; };
+		3E767CC824F43C2000475179 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +77,10 @@
 		3E767C8C24F09C0F00475179 /* SampleModule */ = {
 			isa = PBXGroup;
 			children = (
+				3E767CBA24F35ABC00475179 /* SampleModule.entitlements */,
 				3E767CB724F34FBA00475179 /* Data Model */,
 				3E767C9C24F09C1E00475179 /* UICollectionView */,
+				3E767CC424F4336400475179 /* SwiftUI */,
 				3E767C8D24F09C0F00475179 /* SampleModuleApp.swift */,
 				3E767C8F24F09C0F00475179 /* ContentView.swift */,
 				3E767C9124F09C1000475179 /* Assets.xcassets */,
@@ -113,6 +124,7 @@
 				3E767CA924F1E82100475179 /* InsetItemsGridViewController.swift */,
 				3E767CAB24F2182100475179 /* TwoColumnViewController.swift */,
 				3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */,
+				3E767CBB24F41AF100475179 /* AdaptiveSectionsViewController.swift */,
 			);
 			path = "Basic View Controllers";
 			sourceTree = "<group>";
@@ -139,6 +151,24 @@
 				3E767CB824F350A300475179 /* OutlineItem.swift */,
 			);
 			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		3E767CC424F4336400475179 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3E767CC724F43C0F00475179 /* SwiftUI Helper */,
+				3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */,
+				3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		3E767CC724F43C0F00475179 /* SwiftUI Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3E767CC824F43C2000475179 /* SectionView.swift */,
+			);
+			path = "SwiftUI Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,11 +244,15 @@
 				3E767C9024F09C0F00475179 /* ContentView.swift in Sources */,
 				3E767CA524F1A40600475179 /* GridViewController.swift in Sources */,
 				3E767C8E24F09C0F00475179 /* SampleModuleApp.swift in Sources */,
+				3E767CBC24F41AF100475179 /* AdaptiveSectionsViewController.swift in Sources */,
 				3E767C9E24F09C4000475179 /* CombineCollectionView.swift in Sources */,
 				3E767CB924F350A300475179 /* OutlineItem.swift in Sources */,
 				3E767CA824F1DE0D00475179 /* TextCell.swift in Sources */,
 				3E767CB024F2D23800475179 /* ListCell.swift in Sources */,
+				3E767CC924F43C2000475179 /* SectionView.swift in Sources */,
+				3E767CCB24F4427A00475179 /* ProgressViewViewController.swift in Sources */,
 				3E767CAA24F1E82100475179 /* InsetItemsGridViewController.swift in Sources */,
+				3E767CC624F433F900475179 /* TextSwiftUIViewController.swift in Sources */,
 				3E767CAC24F2182100475179 /* TwoColumnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SampleModule/SampleModule.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleModule/Preview Content\"";
 				DEVELOPMENT_TEAM = B6LXP9JCNK;
@@ -369,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SampleModule/SampleModule.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleModule/Preview Content\"";
 				DEVELOPMENT_TEAM = B6LXP9JCNK;
