@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class InsetItemsGridViewController: UIViewController {
     
@@ -21,6 +22,13 @@ class InsetItemsGridViewController: UIViewController {
         navigationItem.title = "Inset Items Grid"
         configureHierarchy()
         configureDataSource()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Code", style: .plain, target: self, action: #selector(handleToCode))
+    }
+    
+    @objc private func handleToCode() {
+        guard let url = URL(string: Self.urlString) else { return }
+        let safari = SFSafariViewController(url: url)
+        present(safari, animated: true, completion: nil)
     }
 }
 
@@ -72,4 +80,8 @@ extension InsetItemsGridViewController {
         dataSource.apply(snapshot, animatingDifferences: false)
     }
     
+}
+
+extension InsetItemsGridViewController {
+    static let urlString = "https://github.com/onggiahuy97/Sample-Collection-Views/blob/master/SampleModule/UICollectionView/Compositional%20Layout/Basic%20View%20Controllers/InsetItemsGridViewController.swift"
 }

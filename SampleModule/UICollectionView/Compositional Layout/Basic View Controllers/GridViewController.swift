@@ -22,21 +22,17 @@ class GridViewController: UIViewController {
         navigationItem.title = "Grid"
         configureHierarchy()
         configureDataSource()
-        configureLink()
-    }
-}
-
-extension GridViewController {
-    func configureLink() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Code", style: .plain, target: self, action: #selector(handleCode))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Code", style: .plain, target: self, action: #selector(handleToCode))
     }
     
-    @objc private func handleCode() {
+    @objc private func handleToCode() {
         guard let url = URL(string: Self.urlString) else { return }
         let safari = SFSafariViewController(url: url)
         present(safari, animated: true, completion: nil)
     }
-    
+}
+
+extension GridViewController {
     private func createLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2), heightDimension: .fractionalHeight(1.0))
         

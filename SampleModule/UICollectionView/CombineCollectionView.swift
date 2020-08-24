@@ -14,36 +14,9 @@ class CombineCollectionView: UIViewController {
         case main
     }
     
-    class OutlineItem: Hashable {
-        let title: String
-        let subitems: [OutlineItem]
-        let url: String
-        let outlineViewController: UIViewController.Type?
-        
-        init(title: String,
-             viewController: UIViewController.Type? = nil,
-             url: String = "",
-             subitems: [OutlineItem] = []) {
-            self.title = title
-            self.subitems = subitems
-            self.url = url
-            self.outlineViewController = viewController
-        }
-        
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(identifier)
-        }
-        
-        static func == (lhs: OutlineItem, rhs: OutlineItem) -> Bool {
-            return lhs.identifier == rhs.identifier
-        }
-        
-        private let identifier = UUID()
-    }
-    
     var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>! = nil
     var collectionView: UICollectionView! = nil
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Sample Collection Views"
@@ -53,26 +26,10 @@ class CombineCollectionView: UIViewController {
     }
     
     @objc private func handleCode() {
-        guard let url = URL(string: "https://apple.com") else { return }
+        guard let url = URL(string: Self.urlString) else { return }
         let sf = SFSafariViewController(url: url)
         present(sf, animated: true, completion: nil)
     }
-    
-    private lazy var menuItems: [OutlineItem] = {
-        return [
-            OutlineItem(title: "Compotisional Layout", subitems: [
-                OutlineItem(title: "Getting Started", subitems: [
-                    OutlineItem(title: "Grid", viewController: GridViewController.self, url: ""),
-                    OutlineItem(title: "Inset Items Grid", viewController: InsetItemsGridViewController.self, url: ""),
-                    OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
-                    OutlineItem(title: "Per-Section Layout", subitems: [
-                        OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self)
-                    ])
-                ])
-            ])
-        ]
-    }()
-    
     
 }
 
@@ -128,7 +85,7 @@ extension CombineCollectionView {
             }
         }
         
-        addItems(menuItems, to: nil)
+        addItems(OutlineItem.menuItems, to: nil)
         return snapshot
     }
     
@@ -147,6 +104,10 @@ extension CombineCollectionView: UICollectionViewDelegate {
             navigationController?.pushViewController(viewController.init(), animated: true)
         }
     }
+}
+
+extension CombineCollectionView {
+    static let urlString = "https://github.com/onggiahuy97/Sample-Collection-Views/blob/master/SampleModule/UICollectionView/CombineCollectionView.swift"
 }
 
 struct CombineCollectionViewContainer: UIViewControllerRepresentable {

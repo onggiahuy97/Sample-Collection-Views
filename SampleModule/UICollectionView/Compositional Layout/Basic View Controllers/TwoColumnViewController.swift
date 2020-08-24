@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class TwoColumnViewController: UIViewController {
     
@@ -21,7 +22,15 @@ class TwoColumnViewController: UIViewController {
         navigationItem.title = "Two-Column Grid"
         configureHierarchy()
         configureDataSource()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Code", style: .plain, target: self, action: #selector(handleToCode))
     }
+    
+    @objc private func handleToCode() {
+        guard let url = URL(string: Self.urlString) else { return }
+        let safari = SFSafariViewController(url: url)
+        present(safari, animated: true, completion: nil)
+    }
+    
 }
 
 extension TwoColumnViewController {
@@ -72,4 +81,8 @@ extension TwoColumnViewController {
         snapshot.appendItems(Array(0...104))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
+}
+
+extension TwoColumnViewController {
+    static let urlString = "https://github.com/onggiahuy97/Sample-Collection-Views/blob/master/SampleModule/UICollectionView/Compositional%20Layout/Basic%20View%20Controllers/TwoColumnViewController.swift"
 }
