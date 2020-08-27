@@ -23,6 +23,23 @@
 		3E767CC624F433F900475179 /* TextSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */; };
 		3E767CC924F43C2000475179 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CC824F43C2000475179 /* SectionView.swift */; };
 		3E767CCB24F4427A00475179 /* ProgressViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */; };
+		3E767CD624F57B3D00475179 /* ButtonsSwiftUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CD524F57B3D00475179 /* ButtonsSwiftUIVC.swift */; };
+		3E767CD824F5805A00475179 /* SystemControlsSwiftUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CD724F5805A00475179 /* SystemControlsSwiftUIVC.swift */; };
+		3E767CDA24F58CA100475179 /* ColorsSwiftUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CD924F58CA100475179 /* ColorsSwiftUIVC.swift */; };
+		3E767CDC24F5905C00475179 /* HapticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CDB24F5905C00475179 /* HapticsViewController.swift */; };
+		3E767CDE24F5B06600475179 /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CDD24F5B06600475179 /* FontsViewController.swift */; };
+		3E767CE124F5D3CF00475179 /* ItemBadgeSupplementaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE024F5D3CF00475179 /* ItemBadgeSupplementaryViewController.swift */; };
+		3E767CE324F5DB5E00475179 /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE224F5DB5E00475179 /* BadgeSupplementaryView.swift */; };
+		3E767CE524F6BA6200475179 /* SectionHeadersFootersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE424F6BA6200475179 /* SectionHeadersFootersViewController.swift */; };
+		3E767CE724F6BC9100475179 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE624F6BC9100475179 /* TitleSupplementaryView.swift */; };
+		3E767CE924F6BEBD00475179 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE824F6BEBD00475179 /* PinnedSectionHeaderFooterViewController.swift */; };
+		3E767CEB24F6D8F600475179 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CEA24F6D8F600475179 /* SectionDecorationViewController.swift */; };
+		3E767CED24F6DF2100475179 /* SectionBackgroundDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CEC24F6DF2100475179 /* SectionBackgroundDecorationView.swift */; };
+		3E767CEF24F6E26200475179 /* NestedGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CEE24F6E26200475179 /* NestedGroupsViewController.swift */; };
+		3E767CF124F6E93900475179 /* CustomCompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CF024F6E93900475179 /* CustomCompositionalLayoutViewController.swift */; };
+		3E767CF324F71C4E00475179 /* OrthogonalScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CF224F71C4E00475179 /* OrthogonalScrollingViewController.swift */; };
+		3E767CF524F71C6100475179 /* OrthogonalScrollBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CF424F71C6100475179 /* OrthogonalScrollBehaviorViewController.swift */; };
+		3E767CF824F7749200475179 /* ListAppearancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CF724F7749200475179 /* ListAppearancesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +62,23 @@
 		3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSwiftUIViewController.swift; sourceTree = "<group>"; };
 		3E767CC824F43C2000475179 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewViewController.swift; sourceTree = "<group>"; };
+		3E767CD524F57B3D00475179 /* ButtonsSwiftUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsSwiftUIVC.swift; sourceTree = "<group>"; };
+		3E767CD724F5805A00475179 /* SystemControlsSwiftUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemControlsSwiftUIVC.swift; sourceTree = "<group>"; };
+		3E767CD924F58CA100475179 /* ColorsSwiftUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsSwiftUIVC.swift; sourceTree = "<group>"; };
+		3E767CDB24F5905C00475179 /* HapticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsViewController.swift; sourceTree = "<group>"; };
+		3E767CDD24F5B06600475179 /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
+		3E767CE024F5D3CF00475179 /* ItemBadgeSupplementaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeSupplementaryViewController.swift; sourceTree = "<group>"; };
+		3E767CE224F5DB5E00475179 /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
+		3E767CE424F6BA6200475179 /* SectionHeadersFootersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersFootersViewController.swift; sourceTree = "<group>"; };
+		3E767CE624F6BC9100475179 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
+		3E767CE824F6BEBD00475179 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
+		3E767CEA24F6D8F600475179 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
+		3E767CEC24F6DF2100475179 /* SectionBackgroundDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundDecorationView.swift; sourceTree = "<group>"; };
+		3E767CEE24F6E26200475179 /* NestedGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedGroupsViewController.swift; sourceTree = "<group>"; };
+		3E767CF024F6E93900475179 /* CustomCompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCompositionalLayoutViewController.swift; sourceTree = "<group>"; };
+		3E767CF224F71C4E00475179 /* OrthogonalScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalScrollingViewController.swift; sourceTree = "<group>"; };
+		3E767CF424F71C6100475179 /* OrthogonalScrollBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalScrollBehaviorViewController.swift; sourceTree = "<group>"; };
+		3E767CF724F7749200475179 /* ListAppearancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppearancesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +117,7 @@
 				3E767CC424F4336400475179 /* SwiftUI */,
 				3E767C8D24F09C0F00475179 /* SampleModuleApp.swift */,
 				3E767C8F24F09C0F00475179 /* ContentView.swift */,
+				3E767CF024F6E93900475179 /* CustomCompositionalLayoutViewController.swift */,
 				3E767C9124F09C1000475179 /* Assets.xcassets */,
 				3E767C9624F09C1000475179 /* Info.plist */,
 				3E767C9324F09C1000475179 /* Preview Content */,
@@ -101,6 +136,7 @@
 		3E767C9C24F09C1E00475179 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				3E767CF624F7748B00475179 /* Lists */,
 				3E767CB424F2E35F00475179 /* Helper */,
 				3E767CA224F1A3DE00475179 /* Compositional Layout */,
 				3E767C9D24F09C4000475179 /* CombineCollectionView.swift */,
@@ -111,6 +147,7 @@
 		3E767CA224F1A3DE00475179 /* Compositional Layout */ = {
 			isa = PBXGroup;
 			children = (
+				3E767CDF24F5D3B800475179 /* Advanced Layouts ViewController */,
 				3E767CA624F1DDE500475179 /* Cell and Supplementary Views */,
 				3E767CA324F1A3F700475179 /* Basic View Controllers */,
 			);
@@ -120,11 +157,15 @@
 		3E767CA324F1A3F700475179 /* Basic View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E767CE024F5D3CF00475179 /* ItemBadgeSupplementaryViewController.swift */,
 				3E767CA424F1A40600475179 /* GridViewController.swift */,
 				3E767CA924F1E82100475179 /* InsetItemsGridViewController.swift */,
 				3E767CAB24F2182100475179 /* TwoColumnViewController.swift */,
 				3E767CAD24F2CD0C00475179 /* DistinctSectionsViewController.swift */,
 				3E767CBB24F41AF100475179 /* AdaptiveSectionsViewController.swift */,
+				3E767CE424F6BA6200475179 /* SectionHeadersFootersViewController.swift */,
+				3E767CE824F6BEBD00475179 /* PinnedSectionHeaderFooterViewController.swift */,
+				3E767CEA24F6D8F600475179 /* SectionDecorationViewController.swift */,
 			);
 			path = "Basic View Controllers";
 			sourceTree = "<group>";
@@ -134,6 +175,9 @@
 			children = (
 				3E767CA724F1DE0D00475179 /* TextCell.swift */,
 				3E767CAF24F2D23800475179 /* ListCell.swift */,
+				3E767CE224F5DB5E00475179 /* BadgeSupplementaryView.swift */,
+				3E767CE624F6BC9100475179 /* TitleSupplementaryView.swift */,
+				3E767CEC24F6DF2100475179 /* SectionBackgroundDecorationView.swift */,
 			);
 			path = "Cell and Supplementary Views";
 			sourceTree = "<group>";
@@ -159,6 +203,11 @@
 				3E767CC724F43C0F00475179 /* SwiftUI Helper */,
 				3E767CC524F433F900475179 /* TextSwiftUIViewController.swift */,
 				3E767CCA24F4427A00475179 /* ProgressViewViewController.swift */,
+				3E767CD524F57B3D00475179 /* ButtonsSwiftUIVC.swift */,
+				3E767CD724F5805A00475179 /* SystemControlsSwiftUIVC.swift */,
+				3E767CD924F58CA100475179 /* ColorsSwiftUIVC.swift */,
+				3E767CDB24F5905C00475179 /* HapticsViewController.swift */,
+				3E767CDD24F5B06600475179 /* FontsViewController.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -169,6 +218,24 @@
 				3E767CC824F43C2000475179 /* SectionView.swift */,
 			);
 			path = "SwiftUI Helper";
+			sourceTree = "<group>";
+		};
+		3E767CDF24F5D3B800475179 /* Advanced Layouts ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E767CEE24F6E26200475179 /* NestedGroupsViewController.swift */,
+				3E767CF224F71C4E00475179 /* OrthogonalScrollingViewController.swift */,
+				3E767CF424F71C6100475179 /* OrthogonalScrollBehaviorViewController.swift */,
+			);
+			path = "Advanced Layouts ViewController";
+			sourceTree = "<group>";
+		};
+		3E767CF624F7748B00475179 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				3E767CF724F7749200475179 /* ListAppearancesViewController.swift */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,20 +307,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E767CEF24F6E26200475179 /* NestedGroupsViewController.swift in Sources */,
 				3E767CAE24F2CD0C00475179 /* DistinctSectionsViewController.swift in Sources */,
+				3E767CF524F71C6100475179 /* OrthogonalScrollBehaviorViewController.swift in Sources */,
+				3E767CDC24F5905C00475179 /* HapticsViewController.swift in Sources */,
+				3E767CE924F6BEBD00475179 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
+				3E767CEB24F6D8F600475179 /* SectionDecorationViewController.swift in Sources */,
+				3E767CED24F6DF2100475179 /* SectionBackgroundDecorationView.swift in Sources */,
+				3E767CD624F57B3D00475179 /* ButtonsSwiftUIVC.swift in Sources */,
 				3E767C9024F09C0F00475179 /* ContentView.swift in Sources */,
 				3E767CA524F1A40600475179 /* GridViewController.swift in Sources */,
 				3E767C8E24F09C0F00475179 /* SampleModuleApp.swift in Sources */,
+				3E767CD824F5805A00475179 /* SystemControlsSwiftUIVC.swift in Sources */,
 				3E767CBC24F41AF100475179 /* AdaptiveSectionsViewController.swift in Sources */,
 				3E767C9E24F09C4000475179 /* CombineCollectionView.swift in Sources */,
 				3E767CB924F350A300475179 /* OutlineItem.swift in Sources */,
 				3E767CA824F1DE0D00475179 /* TextCell.swift in Sources */,
+				3E767CDE24F5B06600475179 /* FontsViewController.swift in Sources */,
+				3E767CE724F6BC9100475179 /* TitleSupplementaryView.swift in Sources */,
+				3E767CF124F6E93900475179 /* CustomCompositionalLayoutViewController.swift in Sources */,
+				3E767CE524F6BA6200475179 /* SectionHeadersFootersViewController.swift in Sources */,
+				3E767CDA24F58CA100475179 /* ColorsSwiftUIVC.swift in Sources */,
 				3E767CB024F2D23800475179 /* ListCell.swift in Sources */,
 				3E767CC924F43C2000475179 /* SectionView.swift in Sources */,
 				3E767CCB24F4427A00475179 /* ProgressViewViewController.swift in Sources */,
 				3E767CAA24F1E82100475179 /* InsetItemsGridViewController.swift in Sources */,
 				3E767CC624F433F900475179 /* TextSwiftUIViewController.swift in Sources */,
+				3E767CF824F7749200475179 /* ListAppearancesViewController.swift in Sources */,
+				3E767CF324F71C4E00475179 /* OrthogonalScrollingViewController.swift in Sources */,
 				3E767CAC24F2182100475179 /* TwoColumnViewController.swift in Sources */,
+				3E767CE324F5DB5E00475179 /* BadgeSupplementaryView.swift in Sources */,
+				3E767CE124F5D3CF00475179 /* ItemBadgeSupplementaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

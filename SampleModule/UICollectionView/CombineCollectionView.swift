@@ -106,6 +106,7 @@ extension CombineCollectionView: UICollectionViewDelegate {
     }
 }
 
+
 extension CombineCollectionView {
     static let urlString = "https://github.com/onggiahuy97/Sample-Collection-Views/blob/master/SampleModule/UICollectionView/CombineCollectionView.swift"
 }

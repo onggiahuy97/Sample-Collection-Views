@@ -77,7 +77,7 @@ extension AdaptiveSectionsViewController {
         
         let textCellRegistration = UICollectionView.CellRegistration<TextCell, Int> { (cell, indexPath, id) in
             cell.label.text = "\(id)"
-            cell.contentView.backgroundColor = .yellow
+            cell.contentView.backgroundColor = .systemYellow
             cell.contentView.layer.borderColor = UIColor.black.cgColor
             cell.contentView.layer.borderWidth = 1
             cell.contentView.layer.cornerRadius = SectionLayoutKind(rawValue: indexPath.section)! == .grid5 ? 8 : 0
