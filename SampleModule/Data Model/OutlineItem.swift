@@ -68,14 +68,18 @@ extension OutlineItem {
             ]),
             
             // MARK: - Diffable Data Source
-            
+            OutlineItem(title: "Diffable Data Source", subitems: [
+                OutlineItem(title: "Mountains Search", viewController: MountainsViewController.self)
+            ]),
             // MARK: - Lists
             OutlineItem(title: "Lists", subitems: [
-//                OutlineItem(title: "Simple List", viewController: SimpleListViewController.self),
+                //                OutlineItem(title: "Simple List", viewController: SimpleListViewController.self),
                 OutlineItem(title: "List Appearances", viewController: ListAppearancesViewController.self),
-//                OutlineItem(title: "List with Custom Cells", viewController: CustomCellListViewController.self)
+                //                OutlineItem(title: "List with Custom Cells", viewController: CustomCellListViewController.self)
             ]),
             // MARK: - Outlines
+            
+            // MARK: - Animations
             
             // MARK: - SwiftUI
             OutlineItem(title: "SwiftUI", subitems: [
